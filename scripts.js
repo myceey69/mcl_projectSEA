@@ -173,17 +173,20 @@ function quoteAlert() {
     alert("Click for a randomized quote from the top 10 movies.\n\n" + quotes[randomIndex]);
 }
 
+//this function displays a message that lets the user know what to do with the posters. 
 function info() {
     
     alert("Click on a movie poster to watch its official trailer.");
 
 }
 
+
 function removeLastCard() {
     titles.pop(); // Remove last item in titles array
     showCards(); // Call showCards again to refresh
 }
 
+//this function displays a message that lets the user know that there is a survey on the right. 
 function survey() {
 	
 	alert("Fill the movie survey that's on your right. This helps me know more about you :) ");
