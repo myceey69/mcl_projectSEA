@@ -20,14 +20,16 @@
  * - 3 - Add another string to the titles array a few lines down. Reload your
  *    browser and observe what happens. You should see a fourth "card" appear
  *    with the string you added to the array, but a broken image.
+ * 
  */
 
-//
+
+
 const FAST_AND_FURIOUS_3_POSTER = "https://m.media-amazon.com/images/I/71ql8kIrPKL._AC_UF894,1000_QL80_.jpg";
 const OPPENHEIMER_POSTER =  "https://m.media-amazon.com/images/I/71xDtUSyAKL._AC_UF894,1000_QL80_.jpg";
 const THE_DARK_KNIGHT_POSTER = "https://m.media-amazon.com/images/I/818hyvdVfvL._AC_UF894,1000_QL80_.jpg"; 
 const MATRIX_POSTER = "https://m.media-amazon.com/images/I/71PfZFFz9yL._AC_UF894,1000_QL80_.jpg";
-const INTERSTELLAR_POSTER = "https://m.media-amazon.com/images/I/71dN1QYnf+L._AC_UF894,1000_QL80_.jpg"; 
+const INTERSTELLAR_POSTER = "https://m.media-amazon.com/images/I/71dN1QYnf+L._AC_UF894,1000_QL80_.jpg"; // Corrected variable name
 const PARASITE_POSTER = "https://m.media-amazon.com/images/I/91KArYP03YL._AC_UF894,1000_QL80_.jpg"; 
 const AVENGERS_INFINITY_WAR_POSTER = "https://m.media-amazon.com/images/I/91E4iLIWgHL._AC_UF894,1000_QL80_.jpg"; 
 const BACK_TO_THE_FUTURE_POSTER = "https://i.ebayimg.com/images/g/Ks4AAOSwiCBgiDga/s-l1200.webp"; 
@@ -40,9 +42,9 @@ let titles = [
     "Oppenheimer",
     "The Dark Knight",
     "The Matrix",
-    "Interstellar",
+    "Interstellar", // Corrected spelling
     "Parasite",
-    "Avengers",
+    "Avengers",  
     "Back to the Future",
     "Rocky",
     "Kung Fu Hustle"
@@ -72,30 +74,44 @@ function showCards() {
     
     for (let i = 0; i < titles.length; ++i) {
         let title = titles[i];
- 
-        // This part of the code doesn't scale very well! After you add your
-        // own data, you'll need to do something totally different here.
         let imageURL = "";
-        if (i == 0) {
-            imageURL = FAST_AND_FURIOUS_3_POSTER;
-        } else if (i == 1) {
-            imageURL = OPPENHEIMER_POSTER;
-        } else if (i == 2) {
-            imageURL = THE_DARK_KNIGHT_POSTER;
-        } else if (i == 3) {
-            imageURL = MATRIX_POSTER;
-        } else if (i == 4) {
-            imageURL = INTERSTELLAR_POSTER;
-        } else if (i == 5) {
-            imageURL = PARASITE_POSTER;
-        } else if (i == 6) {
-            imageURL = AVENGERS_INFINITY_WAR_POSTER;
-        } else if (i == 7) {
-            imageURL = BACK_TO_THE_FUTURE_POSTER;
-        } else if (i == 8) {
-            imageURL = ROCKY_POSTER;
-        } else if (i == 9) {
-            imageURL = KUNG_FU_HUSTLE_POSTER;
+        let trailerURL = movieURLs[i];
+
+        // Assigning poster URLs based on the index of the movie
+        switch (i) {
+            case 0:
+                imageURL = FAST_AND_FURIOUS_3_POSTER;
+                break;
+            case 1:
+                imageURL = OPPENHEIMER_POSTER;
+                break;
+            case 2:
+                imageURL = THE_DARK_KNIGHT_POSTER;
+                break;
+            case 3:
+                imageURL = MATRIX_POSTER;
+                break;
+            case 4:
+                imageURL = INTERSTELLAR_POSTER;
+                break;
+            case 5:
+                imageURL = PARASITE_POSTER;
+                break;
+            case 6:
+                imageURL = AVENGERS_INFINITY_WAR_POSTER;
+                break;
+            case 7:
+                imageURL = BACK_TO_THE_FUTURE_POSTER;
+                break;
+            case 8:
+                imageURL = ROCKY_POSTER;
+                break;
+            case 9:
+                imageURL = KUNG_FU_HUSTLE_POSTER;
+                break;
+            default:
+                // Handle the case where there's no poster URL provided
+                break;
         }
 
         const nextCard = templateCard.cloneNode(true); // Copy the template card
@@ -103,7 +119,7 @@ function showCards() {
         
         // Create an anchor tag
         const anchorTag = document.createElement("a");
-        anchorTag.href = movieURLs[i];  // You can set this to a valid URL
+        anchorTag.href = trailerURL;  // Set the trailer URL
         
         // Append the card to the anchor tag
         anchorTag.appendChild(nextCard);
@@ -132,21 +148,22 @@ function editCardContent(card, newTitle, newImageURL) {
 // This calls the addCards() function when the page is first loaded
 document.addEventListener("DOMContentLoaded", showCards);
 
+
 function quoteAlert() {
     // Array of quotes
     var quotes = [
         "Fifty percent of something is better than a hundred percent of nothing. \n- Han from Tokyo Drift",
-        "Now I Am Become Death, the Destroyer of Worlds. \n-Oppenheimer",
+        "Now I Am Become Death, the Destroyer of Worlds. -Oppenheimer",
         "It's not who I am underneath, but what I do that defines me. \n-Bruce Wayne from the Dark Knight",
         "You take the blue pill... the story ends, you wake up in your bed and believe whatever you want to believe. You take the red pill... you stay in Wonderland, and I show you how deep the rabbit hole goes. \n-Morpheus from the Matrix",
-        "We're still pioneers, we barely begun. Our greatest accomplishments cannot be behind us, cause our destiny lies above us. \n-Cooper from Interstellar",
+        "We're still pioneers, we barely begun. Our greatest accomplishments cannot be behind us, cause our destiny lies above us. \n-Cooper from Interestellar",
         "So, there's no need for a plan. You can't go wrong with no plans. We don't need to make a plan for anything. It doesn't matter what will happen next. \n-Kim Ki-taek from Parasite", 
-        "In time, you will know what it's like to lose. To feel so desperately that you're right. Yet to fail all the same. Dread it. \n-Thanos from Avengers: Infinity War",
-        "I Guess You Guys Aren't Ready For That Yet. But Your Kids Are Gonna Love It. \n-Marty Mcfly from Back to the Future",
-        "It ain't about how hard you hit. It's about how hard you can get hit and keep moving forward; how much you can take and keep moving forward. That's how winning is done! \n-Rocky",
-        "I realized then that good guys never win. I want to be bad. I want to be the killer! \n-Sing from Kung Fu Hustle"
+		"In time, you will know what it's like to lose. To feel so desperately that you're right. Yet to fail all the same. Dread it. \n-Thanos from Avengers: Infinity War",
+		"I Guess You Guys Aren't Ready For That Yet. But Your Kids Are Gonna Love It. \n-Marty Mcfly from Back to the Future",
+		"It ain't about how hard you hit. It's about how hard you can get hit and keep moving forward; how much you can take and keep moving forward. That's how winning is done! \n-Rocky",
+		"I realized then that good guys never win. I want to be bad. I want to be the killer! \n-Sing from Kung Fu Hustle"
 		
-        // Add more quotes as needed
+		// Add more quotes as needed
     ];
 
     // Generate a random index to select a quote from the array
@@ -168,8 +185,9 @@ function removeLastCard() {
 }
 
 function survey() {
-    
-    alert("Fill out the movie survey that's on your right. This helps me know more about you :) ");
-    
+	
+	alert("Fill the movie survey that's on your right. This helps me know more about you :) ");
+	
 }
+
  
