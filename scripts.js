@@ -36,13 +36,13 @@ const BACK_TO_THE_FUTURE_POSTER = "https://i.ebayimg.com/images/g/Ks4AAOSwiCBgiD
 const ROCKY_POSTER = "https://m.media-amazon.com/images/I/61qNMpgcPfL._AC_UF894,1000_QL80_.jpg"; 
 const KUNG_FU_HUSTLE_POSTER = "https://m.media-amazon.com/images/I/71m93EonyZL._AC_UF894,1000_QL80_.jpg";
 
-// This is an array of strings (TV show titles)
+// This is an array of strings (Movies)
 let titles = [
     "Tokyo Drift",
     "Oppenheimer",
     "The Dark Knight",
     "The Matrix",
-    "Interstellar", // Corrected spelling
+    "Interstellar",
     "Parasite",
     "Avengers",  
     "Back to the Future",
