@@ -24,12 +24,12 @@
  */
 
 
-
+//
 const FAST_AND_FURIOUS_3_POSTER = "https://m.media-amazon.com/images/I/71ql8kIrPKL._AC_UF894,1000_QL80_.jpg";
 const OPPENHEIMER_POSTER =  "https://m.media-amazon.com/images/I/71xDtUSyAKL._AC_UF894,1000_QL80_.jpg";
 const THE_DARK_KNIGHT_POSTER = "https://m.media-amazon.com/images/I/818hyvdVfvL._AC_UF894,1000_QL80_.jpg"; 
 const MATRIX_POSTER = "https://m.media-amazon.com/images/I/71PfZFFz9yL._AC_UF894,1000_QL80_.jpg";
-const INTERESTELLAR_POSTER = "https://m.media-amazon.com/images/I/71dN1QYnf+L._AC_UF894,1000_QL80_.jpg"; 
+const INTERSTELLAR_POSTER = "https://m.media-amazon.com/images/I/71dN1QYnf+L._AC_UF894,1000_QL80_.jpg"; 
 const PARASITE_POSTER = "https://m.media-amazon.com/images/I/91KArYP03YL._AC_UF894,1000_QL80_.jpg	"; 
 const AVENGERS_INFINITY_WAR_POSTER = "https://m.media-amazon.com/images/I/91E4iLIWgHL._AC_UF894,1000_QL80_.jpg"; 
 const BACK_TO_THE_FUTURE_POSTER = "https://i.ebayimg.com/images/g/Ks4AAOSwiCBgiDga/s-l1200.webp"; 
@@ -43,7 +43,7 @@ let titles = [
     "Oppenheimer",
     "The Dark Knight",
 	"The Matrix",
-	"Interestellar",
+	"Interstellar",
 	"Parasite",
 	"Avengers",	
 	"Back to the Future",
@@ -88,7 +88,7 @@ function showCards() {
         } else if (i == 3) {
             imageURL = MATRIX_POSTER;
         } else if (i == 4) {
-            imageURL = INTERESTELLAR_POSTER;
+            imageURL = INTERSTELLAR_POSTER;
         } else if (i == 5) {
             imageURL = PARASITE_POSTER;
         } else if (i == 6) {
@@ -143,7 +143,7 @@ function quoteAlert() {
         "Now I Am Become Death, the Destroyer of Worlds. \n-Oppenheimer",
         "It's not who I am underneath, but what I do that defines me. \n-Bruce Wayne from the Dark Knight",
         "You take the blue pill... the story ends, you wake up in your bed and believe whatever you want to believe. You take the red pill... you stay in Wonderland, and I show you how deep the rabbit hole goes. \n-Morpheus from the Matrix",
-        "We're still pioneers, we barely begun. Our greatest accomplishments cannot be behind us, cause our destiny lies above us. \n-Cooper from Interestellar",
+        "We're still pioneers, we barely begun. Our greatest accomplishments cannot be behind us, cause our destiny lies above us. \n-Cooper from Interstellar",
         "So, there's no need for a plan. You can't go wrong with no plans. We don't need to make a plan for anything. It doesn't matter what will happen next. \n-Kim Ki-taek from Parasite", 
 		"In time, you will know what it's like to lose. To feel so desperately that you're right. Yet to fail all the same. Dread it. \n-Thanos from Avengers: Infinity War",
 		"I Guess You Guys Aren't Ready For That Yet. But Your Kids Are Gonna Love It. \n-Marty Mcfly from Back to the Future",
