@@ -135,19 +135,46 @@ function editCardContent(card, newTitle, newImageURL) {
 // This calls the addCards() function when the page is first loaded
 document.addEventListener("DOMContentLoaded", showCards);
 
+
 function quoteAlert() {
-    console.log("Button Clicked!")
-    alert("I guess I can kiss heaven goodbye, because it got to be a sin to look this good!");
+    // Array of quotes
+    var quotes = [
+        "Fifty percent of something is better than a hundred percent of nothing. \n- Han from Tokyo Drift",
+        "Now I Am Become Death, the Destroyer of Worlds. -Oppenheimer",
+        "It's not who I am underneath, but what I do that defines me. \n-Bruce Wayne from the Dark Knight",
+        "You take the blue pill... the story ends, you wake up in your bed and believe whatever you want to believe. You take the red pill... you stay in Wonderland, and I show you how deep the rabbit hole goes. \n-Morpheus from the Matrix",
+        "We're still pioneers, we barely begun. Our greatest accomplishments cannot be behind us, cause our destiny lies above us. \n-Cooper from Interestellar",
+        "So, there's no need for a plan. You can't go wrong with no plans. We don't need to make a plan for anything. It doesn't matter what will happen next. \n-Kim Ki-taek from Parasite", 
+		"In time, you will know what it's like to lose. To feel so desperately that you're right. Yet to fail all the same. Dread it. \n-Thanos from Avengers: Infinity War",
+		"I Guess You Guys Aren't Ready For That Yet. But Your Kids Are Gonna Love It. \n-Marty Mcfly from Back to the Future",
+		"It ain't about how hard you hit. It's about how hard you can get hit and keep moving forward; how much you can take and keep moving forward. That's how winning is done! \n-Rocky",
+		"I realized then that good guys never win. I want to be bad. I want to be the killer! \n-Sing from Kung Fu Hustle"
+		
+		// Add more quotes as needed
+    ];
+
+    // Generate a random index to select a quote from the array
+    var randomIndex = Math.floor(Math.random() * quotes.length);
+
+    // Display the randomly selected quote
+    alert("Click for a randomized quote from the top 10 movies.\n\n" + quotes[randomIndex]);
 }
 
 function info() {
-    console.log("Button Clicked!")
+    
     alert("Click on a movie poster to watch its official trailer.");
+
 }
 
 function removeLastCard() {
     titles.pop(); // Remove last item in titles array
     showCards(); // Call showCards again to refresh
+}
+
+function survey() {
+	
+	alert("Fill the movie survey that's on your right. This helps me know more about you :) ");
+	
 }
 
  document.getElementById('surveyForm').addEventListener('submit', function (event) {
