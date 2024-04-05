@@ -12,6 +12,12 @@ body {
     padding-bottom: 10px;
 }
 
+.header {
+    text-align: center;
+    padding: 10px;
+    
+}
+
 .title {
     text-align: center;
     margin: 0;
