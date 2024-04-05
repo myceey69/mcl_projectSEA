@@ -24,7 +24,7 @@
  */
 
 
-
+//declaration of movie posters from the 10 movies. 
 const FAST_AND_FURIOUS_3_POSTER = "https://m.media-amazon.com/images/I/71ql8kIrPKL._AC_UF894,1000_QL80_.jpg";
 const OPPENHEIMER_POSTER =  "https://m.media-amazon.com/images/I/71xDtUSyAKL._AC_UF894,1000_QL80_.jpg";
 const THE_DARK_KNIGHT_POSTER = "https://m.media-amazon.com/images/I/818hyvdVfvL._AC_UF894,1000_QL80_.jpg"; 
@@ -36,7 +36,8 @@ const BACK_TO_THE_FUTURE_POSTER = "https://i.ebayimg.com/images/g/Ks4AAOSwiCBgiD
 const ROCKY_POSTER = "https://m.media-amazon.com/images/I/61qNMpgcPfL._AC_UF894,1000_QL80_.jpg"; 
 const KUNG_FU_HUSTLE_POSTER = "https://m.media-amazon.com/images/I/71m93EonyZL._AC_UF894,1000_QL80_.jpg";
 
-// This is an array of strings (TV show titles)
+
+//this is an array of strings that displays 10 movies. 
 let titles = [
     "Tokyo Drift",
     "Oppenheimer",
@@ -53,6 +54,8 @@ let titles = [
 // Your final submission should have much more data than this, and 
 // you should use more than just an array of strings to store it all.
 
+
+//this is an array of strings that displays movie trailers from the 10 movies. 
 const movieURLs = [
     "https://www.youtube.com/watch?v=p8HQ2JLlc4E",
     "https://www.youtube.com/watch?v=uYPbbksJxIg",
@@ -66,7 +69,7 @@ const movieURLs = [
     "https://www.youtube.com/watch?v=FtE9-o6dBEI"
 ];
 
-// This function adds cards the page to display the data in the array
+//this function adds cards the page to display the data in the array
 function showCards() {
     const cardContainer = document.getElementById("card-container");
     cardContainer.innerHTML = "";
@@ -77,7 +80,7 @@ function showCards() {
         let imageURL = "";
         let trailerURL = movieURLs[i];
 
-        // Assigning poster URLs based on the index of the movie
+        //used switch cases to display the movies. 
         switch (i) {
             case 0:
                 imageURL = FAST_AND_FURIOUS_3_POSTER;
@@ -110,7 +113,6 @@ function showCards() {
                 imageURL = KUNG_FU_HUSTLE_POSTER;
                 break;
             default:
-                // Handle the case where there's no poster URL provided
                 break;
         }
 
