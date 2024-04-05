@@ -184,15 +184,16 @@ function removeLastCard() {
     showCards(); // Call showCards again to refresh
 }
 
-function addCard(newTitle, newImageURL, newTrailerURL) {
-    // Add the new title to the titles array
-    titles.push(newTitle);
-
-    // Add the new movie URL to the movieURLs array
-    movieURLs.push(newTrailerURL);
-
-    // Refresh the cards on the webpage
-    showCards();
+function addCard(prevTitle) {
+    // Limit the number of pushes to 10
+    if (titles.length < 10) {
+        // Add the new title to the titles array
+        titles.push(prevTitle);
+        // Refresh the cards on the webpage
+        showCards();
+    } else {
+        console.log("Cannot add more than 10 cards.");
+    }
 }
 
 function survey() {
