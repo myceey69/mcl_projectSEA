@@ -140,7 +140,7 @@ function quoteAlert() {
     // Array of quotes
     var quotes = [
         "Fifty percent of something is better than a hundred percent of nothing. \n- Han from Tokyo Drift",
-        "Now I Am Become Death, the Destroyer of Worlds. -Oppenheimer",
+        "Now I Am Become Death, the Destroyer of Worlds. \n-Oppenheimer",
         "It's not who I am underneath, but what I do that defines me. \n-Bruce Wayne from the Dark Knight",
         "You take the blue pill... the story ends, you wake up in your bed and believe whatever you want to believe. You take the red pill... you stay in Wonderland, and I show you how deep the rabbit hole goes. \n-Morpheus from the Matrix",
         "We're still pioneers, we barely begun. Our greatest accomplishments cannot be behind us, cause our destiny lies above us. \n-Cooper from Interestellar",
