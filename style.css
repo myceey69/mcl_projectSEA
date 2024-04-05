@@ -6,9 +6,6 @@ body {
 }
 
 /* Your existing CSS styles */
-a {
-    margin-right: 70px; /* Adjust as needed */
-}
 
 .main-header {
     background-color: rgba(255, 252, 0, 0.3); /* Changed background color to red with some transparency */
