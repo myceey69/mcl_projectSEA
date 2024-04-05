@@ -173,7 +173,7 @@ function removeLastCard() {
 
 function survey() {
 	
-	alert("Fill the movie survey that's on your right. This helps me know more about you :) ");
+	alert("Fill out the movie survey that's on your right. This helps me know more about you :) ");
 	
 }
 
