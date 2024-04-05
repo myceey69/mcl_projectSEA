@@ -20,9 +20,7 @@
  * - 3 - Add another string to the titles array a few lines down. Reload your
  *    browser and observe what happens. You should see a fourth "card" appear
  *    with the string you added to the array, but a broken image.
- * 
  */
-
 
 //
 const FAST_AND_FURIOUS_3_POSTER = "https://m.media-amazon.com/images/I/71ql8kIrPKL._AC_UF894,1000_QL80_.jpg";
@@ -30,27 +28,26 @@ const OPPENHEIMER_POSTER =  "https://m.media-amazon.com/images/I/71xDtUSyAKL._AC
 const THE_DARK_KNIGHT_POSTER = "https://m.media-amazon.com/images/I/818hyvdVfvL._AC_UF894,1000_QL80_.jpg"; 
 const MATRIX_POSTER = "https://m.media-amazon.com/images/I/71PfZFFz9yL._AC_UF894,1000_QL80_.jpg";
 const INTERSTELLAR_POSTER = "https://m.media-amazon.com/images/I/71dN1QYnf+L._AC_UF894,1000_QL80_.jpg"; 
-const PARASITE_POSTER = "https://m.media-amazon.com/images/I/91KArYP03YL._AC_UF894,1000_QL80_.jpg	"; 
+const PARASITE_POSTER = "https://m.media-amazon.com/images/I/91KArYP03YL._AC_UF894,1000_QL80_.jpg"; 
 const AVENGERS_INFINITY_WAR_POSTER = "https://m.media-amazon.com/images/I/91E4iLIWgHL._AC_UF894,1000_QL80_.jpg"; 
 const BACK_TO_THE_FUTURE_POSTER = "https://i.ebayimg.com/images/g/Ks4AAOSwiCBgiDga/s-l1200.webp"; 
 const ROCKY_POSTER = "https://m.media-amazon.com/images/I/61qNMpgcPfL._AC_UF894,1000_QL80_.jpg"; 
 const KUNG_FU_HUSTLE_POSTER = "https://m.media-amazon.com/images/I/71m93EonyZL._AC_UF894,1000_QL80_.jpg";
-
 
 // This is an array of strings (TV show titles)
 let titles = [
     "Tokyo Drift",
     "Oppenheimer",
     "The Dark Knight",
-	"The Matrix",
-	"Interstellar",
-	"Parasite",
-	"Avengers",	
-	"Back to the Future",
-	"Rocky",
-	"Kung Fu Hustle"
-	
+    "The Matrix",
+    "Interstellar",
+    "Parasite",
+    "Avengers",
+    "Back to the Future",
+    "Rocky",
+    "Kung Fu Hustle"
 ];
+
 // Your final submission should have much more data than this, and 
 // you should use more than just an array of strings to store it all.
 
@@ -58,13 +55,13 @@ const movieURLs = [
     "https://www.youtube.com/watch?v=p8HQ2JLlc4E",
     "https://www.youtube.com/watch?v=uYPbbksJxIg",
     "https://www.youtube.com/watch?v=EXeTwQWrcwY",
-	"https://www.youtube.com/watch?v=vKQi3bBA1y8",
-	"https://www.youtube.com/watch?v=zSWdZVtXT7E",
-	"https://www.youtube.com/watch?v=5xH0HfJHsaY",
-	"https://www.youtube.com/watch?v=6ZfuNTqbHE8",
-	"https://www.youtube.com/watch?v=qvsgGtivCgs",
-	"https://www.youtube.com/watch?v=-Hk-LYcavrw",
-	"https://www.youtube.com/watch?v=FtE9-o6dBEI"
+    "https://www.youtube.com/watch?v=vKQi3bBA1y8",
+    "https://www.youtube.com/watch?v=zSWdZVtXT7E",
+    "https://www.youtube.com/watch?v=5xH0HfJHsaY",
+    "https://www.youtube.com/watch?v=6ZfuNTqbHE8",
+    "https://www.youtube.com/watch?v=qvsgGtivCgs",
+    "https://www.youtube.com/watch?v=-Hk-LYcavrw",
+    "https://www.youtube.com/watch?v=FtE9-o6dBEI"
 ];
 
 // This function adds cards the page to display the data in the array
@@ -135,7 +132,6 @@ function editCardContent(card, newTitle, newImageURL) {
 // This calls the addCards() function when the page is first loaded
 document.addEventListener("DOMContentLoaded", showCards);
 
-
 function quoteAlert() {
     // Array of quotes
     var quotes = [
@@ -145,12 +141,12 @@ function quoteAlert() {
         "You take the blue pill... the story ends, you wake up in your bed and believe whatever you want to believe. You take the red pill... you stay in Wonderland, and I show you how deep the rabbit hole goes. \n-Morpheus from the Matrix",
         "We're still pioneers, we barely begun. Our greatest accomplishments cannot be behind us, cause our destiny lies above us. \n-Cooper from Interstellar",
         "So, there's no need for a plan. You can't go wrong with no plans. We don't need to make a plan for anything. It doesn't matter what will happen next. \n-Kim Ki-taek from Parasite", 
-		"In time, you will know what it's like to lose. To feel so desperately that you're right. Yet to fail all the same. Dread it. \n-Thanos from Avengers: Infinity War",
-		"I Guess You Guys Aren't Ready For That Yet. But Your Kids Are Gonna Love It. \n-Marty Mcfly from Back to the Future",
-		"It ain't about how hard you hit. It's about how hard you can get hit and keep moving forward; how much you can take and keep moving forward. That's how winning is done! \n-Rocky",
-		"I realized then that good guys never win. I want to be bad. I want to be the killer! \n-Sing from Kung Fu Hustle"
+        "In time, you will know what it's like to lose. To feel so desperately that you're right. Yet to fail all the same. Dread it. \n-Thanos from Avengers: Infinity War",
+        "I Guess You Guys Aren't Ready For That Yet. But Your Kids Are Gonna Love It. \n-Marty Mcfly from Back to the Future",
+        "It ain't about how hard you hit. It's about how hard you can get hit and keep moving forward; how much you can take and keep moving forward. That's how winning is done! \n-Rocky",
+        "I realized then that good guys never win. I want to be bad. I want to be the killer! \n-Sing from Kung Fu Hustle"
 		
-		// Add more quotes as needed
+        // Add more quotes as needed
     ];
 
     // Generate a random index to select a quote from the array
@@ -172,50 +168,8 @@ function removeLastCard() {
 }
 
 function survey() {
-	
-	alert("Fill out the movie survey that's on your right. This helps me know more about you :) ");
-	
+    
+    alert("Fill out the movie survey that's on your right. This helps me know more about you :) ");
+    
 }
-
- document.getElementById('surveyForm').addEventListener('submit', function (event) {
-            event.preventDefault(); // Prevent form submission
-
-            // Get form data
-            var formData = new FormData(this);
-
-            // Convert form data to object
-            var formObject = {};
-            formData.forEach(function(value, key){
-                formObject[key] = value;
-            });
-
-            // Store form data in local storage
-            var surveys = JSON.parse(localStorage.getItem('surveys')) || [];
-            surveys.push(formObject);
-            localStorage.setItem('surveys', JSON.stringify(surveys));
-
-            // Clear form inputs
-            this.reset();
-
-            // Show survey results
-            showSurveyResults();
-        });
-
-        function showSurveyResults() {
-            var surveyResultsDiv = document.getElementById('surveyResults');
-            var resultsList = document.getElementById('resultsList');
-            resultsList.innerHTML = '';
-
-            // Retrieve survey data from local storage
-            var surveys = JSON.parse(localStorage.getItem('surveys')) || [];
-
-            // Display survey results
-            surveys.forEach(function(survey) {
-                var listItem = document.createElement('li');
-                listItem.textContent = 'Name: ' + survey.Name + ', Movie: ' + survey.Movie;
-                resultsList.appendChild(listItem);
-            });
-
-            // Show survey results div
-            surveyResultsDiv.style.display = 'block';
-        }
+ 
