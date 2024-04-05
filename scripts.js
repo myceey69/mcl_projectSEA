@@ -158,10 +158,10 @@ function quoteAlert() {
         "You take the blue pill... the story ends, you wake up in your bed and believe whatever you want to believe. You take the red pill... you stay in Wonderland, and I show you how deep the rabbit hole goes. \n-Morpheus from the Matrix",
         "We're still pioneers, we barely begun. Our greatest accomplishments cannot be behind us, cause our destiny lies above us. \n-Cooper from Interestellar",
         "So, there's no need for a plan. You can't go wrong with no plans. We don't need to make a plan for anything. It doesn't matter what will happen next. \n-Kim Ki-taek from Parasite", 
-		"In time, you will know what it's like to lose. To feel so desperately that you're right. Yet to fail all the same. Dread it. \n-Thanos from Avengers: Infinity War",
-		"I Guess You Guys Aren't Ready For That Yet. But Your Kids Are Gonna Love It. \n-Marty Mcfly from Back to the Future",
-		"It ain't about how hard you hit. It's about how hard you can get hit and keep moving forward; how much you can take and keep moving forward. That's how winning is done! \n-Rocky",
-		"I realized then that good guys never win. I want to be bad. I want to be the killer! \n-Sing from Kung Fu Hustle"
+	"In time, you will know what it's like to lose. To feel so desperately that you're right. Yet to fail all the same. Dread it. \n-Thanos from Avengers: Infinity War",
+	"I Guess You Guys Aren't Ready For That Yet. But Your Kids Are Gonna Love It. \n-Marty Mcfly from Back to the Future",
+	"It ain't about how hard you hit. It's about how hard you can get hit and keep moving forward; how much you can take and keep moving forward. That's how winning is done! \n-Rocky",
+	"I realized then that good guys never win. I want to be bad. I want to be the killer! \n-Sing from Kung Fu Hustle"
 		
 		// Add more quotes as needed
     ];
