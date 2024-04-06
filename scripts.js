@@ -43,7 +43,7 @@ let titles = [
     "Oppenheimer",
     "The Dark Knight",
     "The Matrix",
-    "Interstellar", // Corrected spelling
+    "Interstellar", 
     "Parasite",
     "Avengers",  
     "Back to the Future",
@@ -69,7 +69,7 @@ const movieURLs = [
     "https://www.youtube.com/watch?v=FtE9-o6dBEI"
 ];
 
-//this function adds cards the page to display the data in the array
+//this function adds cards to the page to display the data in the array
 function showCards() {
     const cardContainer = document.getElementById("card-container");
     cardContainer.innerHTML = "";
@@ -80,7 +80,7 @@ function showCards() {
         let imageURL = "";
         let trailerURL = movieURLs[i];
 
-        //used switch cases to display the movies. 
+        //I used switch cases to display the movies. 
         switch (i) {
             case 0:
                 imageURL = FAST_AND_FURIOUS_3_POSTER;
@@ -116,18 +116,18 @@ function showCards() {
                 break;
         }
 
-        const nextCard = templateCard.cloneNode(true); // Copy the template card
-        editCardContent(nextCard, title, imageURL); // Edit title and image
+        const nextCard = templateCard.cloneNode(true); //copy the template card
+        editCardContent(nextCard, title, imageURL); //change title and image
         
-        // Create an anchor tag
+        //create an anchor tag
         const anchorTag = document.createElement("a");
-        anchorTag.href = trailerURL;  // Set the trailer URL
+        anchorTag.href = trailerURL;  //set the trailer URL
         
-        // Append the card to the anchor tag
+        //append the card to the anchor tag
         anchorTag.appendChild(nextCard);
         
-        // Append the anchor tag to the card container
-        cardContainer.appendChild(anchorTag); // Add new card to the container
+        //append the anchor tag to the card container
+        cardContainer.appendChild(anchorTag); //add new card to the container
     }
 }
 
@@ -147,12 +147,11 @@ function editCardContent(card, newTitle, newImageURL) {
     console.log("new card:", newTitle, "- html: ", card);
 }
 
-// This calls the addCards() function when the page is first loaded
+
 document.addEventListener("DOMContentLoaded", showCards);
 
-
 function quoteAlert() {
-    // Array of quotes
+    //this is an array of strings for famous quotes for movies.
     var quotes = [
         "Fifty percent of something is better than a hundred percent of nothing. \n- Han from Tokyo Drift",
         "Now I Am Become Death, the Destroyer of Worlds. -Oppenheimer",
@@ -165,41 +164,46 @@ function quoteAlert() {
 		"It ain't about how hard you hit. It's about how hard you can get hit and keep moving forward; how much you can take and keep moving forward. That's how winning is done! \n-Rocky",
 		"I realized then that good guys never win. I want to be bad. I want to be the killer! \n-Sing from Kung Fu Hustle"
 		
-		// Add more quotes as needed
     ];
 
-    // Generate a random index to select a quote from the array
+    //this generates random quotes from the array above. 
     var randomIndex = Math.floor(Math.random() * quotes.length);
 
-    // Display the randomly selected quote
+    //this displays the randomized movie quote from the array above. 
     alert("Click for a randomized quote from the top 10 movies.\n\n" + quotes[randomIndex]);
 }
 
+//this function displays a message that lets the user know what to do with the posters. 
 function info() {
     
     alert("Click on a movie poster to watch its official trailer.");
 
 }
 
+//this function removes the last movie from the list 
 function removeLastCard() {
     titles.pop(); // Remove last item in titles array
     showCards(); // Call showCards again to refresh
 }
 
+//this function restores/add previous movie from the list. 
 function addCard(prevTitle) {
-    // Limit the number of pushes to 10
+    //limit the number of pushes to 10
     if (titles.length < 10) {
-        // Add the new title to the titles array
+        //add the new title to the titles array
         titles.push(prevTitle);
-        // Refresh the cards on the webpage
+        
         showCards();
     } else {
-        console.log("Cannot add more than 10 cards.");
+        console.log();
     }
 }
 
+//this function dipslays a message that tells the user to fill out the survey that is on their right. 
 function survey() {
 	
 	alert("Fill out the movie survey that's on your right. This helps me know more about you :) ");
 	
 }
+
+ 
