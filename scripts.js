@@ -69,6 +69,21 @@ const movieURLs = [
     "https://www.youtube.com/watch?v=FtE9-o6dBEI"
 ];
 
+//this is an array of strings that displays a brief description of each movie. 
+const descriptions = [
+    "A teenager becomes a major competitor in the world of drift racing after moving in with his father in Tokyo to avoid a jail sentence in America.",
+    "It follows the life of J. Robert Oppenheimer, the American theoretical physicist who helped develop the first nuclear weapons during World War II.",
+    "When the menace known as the Joker wreaks havoc and chaos on the people of Gotham, Batman must accept one of the greatest psychological and physical tests of his ability to fight injustice.",
+    "In a simulated reality, humans are kept sedated, living virtually. Neo wakes up on Morpheus's ship, learning he's the one who can change everything.",
+    "When Earth becomes uninhabitable in the future, a farmer and ex-NASA pilot, Joseph Cooper, is tasked to pilot a spacecraft, along with a team of researchers, to find a new planet for humans.",
+    "It ollows a poor family who infiltrate the life of a wealthy family..",
+    "Thanos seeks to wield the six Infinity Stones, aiming to impose his will on reality. The Avengers face their greatest challenge as the fate of the planet hangs in the balance.",
+    "Marty travels back in time, meets his parents, and ensures their love to exist. He also saves Doc Brown's life before returning to his time.",
+    "A small-time boxer who works as a collector for a loan shark and fights in sleazy clubs for low pay. His gym trainer, Mickey Goldmill (Burgess Meredith), thinks little of Balboa's potential.",
+    "Sing, a loser aspiring to join the Axe Gang in 1940s Shanghai, fails to extort the residents of Pig Sty Alley, a rundown slum."
+];
+
+
 //this function adds cards to the page to display the data in the array
 function showCards() {
     const cardContainer = document.getElementById("card-container");
@@ -79,8 +94,8 @@ function showCards() {
         let title = titles[i];
         let imageURL = "";
         let trailerURL = movieURLs[i];
+        let description = descriptions[i]; //gets description for each movie
 
-        //I used switch cases to display the movies. 
         switch (i) {
             case 0:
                 imageURL = FAST_AND_FURIOUS_3_POSTER;
@@ -116,22 +131,17 @@ function showCards() {
                 break;
         }
 
-        const nextCard = templateCard.cloneNode(true); //copy the template card
-        editCardContent(nextCard, title, imageURL); //change title and image
+        const nextCard = templateCard.cloneNode(true);
+        editCardContent(nextCard, title, imageURL, description); //passes the description to editCardContent
         
-        //create an anchor tag
         const anchorTag = document.createElement("a");
-        anchorTag.href = trailerURL;  //set the trailer URL
-        
-        //append the card to the anchor tag
+        anchorTag.href = trailerURL;
         anchorTag.appendChild(nextCard);
-        
-        //append the anchor tag to the card container
-        cardContainer.appendChild(anchorTag); //add new card to the container
+        cardContainer.appendChild(anchorTag);
     }
 }
 
-function editCardContent(card, newTitle, newImageURL) {
+function editCardContent(card, newTitle, newImageURL, description) {
     card.style.display = "block";
 
     const cardHeader = card.querySelector("h2");
@@ -141,9 +151,9 @@ function editCardContent(card, newTitle, newImageURL) {
     cardImage.src = newImageURL;
     cardImage.alt = newTitle + " Poster";
 
-    // You can use console.log to help you debug!
-    // View the output by right clicking on your website,
-    // select "Inspect", then click on the "Console" tab
+    const cardDescription = card.querySelector(".description"); 
+    cardDescription.textContent = description; //sets a description for each movie
+
     console.log("new card:", newTitle, "- html: ", card);
 }
 
@@ -205,5 +215,4 @@ function survey() {
 	alert("Fill out the movie survey that's on your right. This helps me know more about you :) ");
 	
 }
-
  
