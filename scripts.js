@@ -29,7 +29,7 @@ const FAST_AND_FURIOUS_3_POSTER = "https://m.media-amazon.com/images/I/71ql8kIrP
 const OPPENHEIMER_POSTER =  "https://m.media-amazon.com/images/I/71xDtUSyAKL._AC_UF894,1000_QL80_.jpg";
 const THE_DARK_KNIGHT_POSTER = "https://m.media-amazon.com/images/I/818hyvdVfvL._AC_UF894,1000_QL80_.jpg"; 
 const MATRIX_POSTER = "https://m.media-amazon.com/images/I/71PfZFFz9yL._AC_UF894,1000_QL80_.jpg";
-const INTERSTELLAR_POSTER = "https://m.media-amazon.com/images/I/71dN1QYnf+L._AC_UF894,1000_QL80_.jpg"; // Corrected variable name
+const INTERSTELLAR_POSTER = "https://m.media-amazon.com/images/I/71dN1QYnf+L._AC_UF894,1000_QL80_.jpg";
 const PARASITE_POSTER = "https://m.media-amazon.com/images/I/91KArYP03YL._AC_UF894,1000_QL80_.jpg"; 
 const AVENGERS_INFINITY_WAR_POSTER = "https://m.media-amazon.com/images/I/91E4iLIWgHL._AC_UF894,1000_QL80_.jpg"; 
 const BACK_TO_THE_FUTURE_POSTER = "https://i.ebayimg.com/images/g/Ks4AAOSwiCBgiDga/s-l1200.webp"; 
@@ -76,9 +76,9 @@ const descriptions = [
     "When the menace known as the Joker wreaks havoc and chaos on the people of Gotham, Batman must accept one of the greatest psychological and physical tests of his ability to fight injustice.",
     "In a simulated reality, humans are kept sedated, living virtually. Neo wakes up on Morpheus's ship, learning he's the one who can change everything.",
     "When Earth becomes uninhabitable in the future, a farmer and ex-NASA pilot, Joseph Cooper, is tasked to pilot a spacecraft, along with a team of researchers, to find a new planet for humans.",
-    "It ollows a poor family who infiltrate the life of a wealthy family..",
+    "It allows a poor family who infiltrate the life of a wealthy family..",
     "Thanos seeks to wield the six Infinity Stones, aiming to impose his will on reality. The Avengers face their greatest challenge as the fate of the planet hangs in the balance.",
-    "Marty travels back in time, meets his parents, and ensures their love to exist. He also saves Doc Brown's life before returning to his time.",
+    "Marty travels back in time, meets his parents, and ensures their love exists. He also saves Doc Brown's life before returning to his time.",
     "A small-time boxer who works as a collector for a loan shark and fights in sleazy clubs for low pay. His gym trainer, Mickey Goldmill (Burgess Meredith), thinks little of Balboa's potential.",
     "Sing, a loser aspiring to join the Axe Gang in 1940s Shanghai, fails to extort the residents of Pig Sty Alley, a rundown slum."
 ];
